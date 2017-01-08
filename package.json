@@ -1,0 +1,23 @@
+{
+  "name": "andela-day-1-lab",
+  "version": "1.0.0",
+  "description": "This repository holds my project lab for day 2. It holds 2 functions (dataTypes() and getPrimes()), implemented with TDD, each having its own test cases implemented using jasmine.",
+  "main": "app/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itunuworks/andela-day-1-lab.git"
+  },
+  "keywords": [
+    "dataTypes",
+    "getPrimes"
+  ],
+  "author": "Itunuloluwa Fatoki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itunuworks/andela-day-1-lab/issues"
+  },
+  "homepage": "https://github.com/itunuworks/andela-day-1-lab#readme"
+}
