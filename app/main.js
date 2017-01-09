@@ -93,5 +93,16 @@ module.exports = {
       else if (speed = 7){this.speed = "77 km/h"};
       return this;
     }
+  }, 
+
+  Person: function(firstName, lastName){
+
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.mentionYourName = function(){
+      return ("My name is " + this.firstName);
+    }
+
   }
+
 }
