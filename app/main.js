@@ -40,8 +40,32 @@ module.exports = {
   },
 
   getPrimes: function(number){
+    var primes = [];
+    var i;
 
+    if (number>1){
+      primes.push(2);
+      if (number>2){
+        primes.push(3);
+      }
+      for (i=5; i<=number; i=i+2){
+        var isPrime = true;
+        var j = 0;
+        while (isPrime && primes[j]<=Math.sqrt(i)){
+          if (i%primes[j]==0){
+            isPrime = false
+          }
+          j++;
+        }
+        if (isPrime){
+          primes.push(i);
+        }
+      }
+    }
+
+    return primes;
   }, 
+  
 
   Car: function(name, model, trailer){
     
@@ -49,7 +73,7 @@ module.exports = {
     this.model = "GM";
     this.numOfDoors = 4;
     this.numOfWheels = 4;
-    this.speed = "0 km/h";
+    this.speed = "0 km/h";ss
     this.isSaloon = true;
 
     if (name != undefined){
